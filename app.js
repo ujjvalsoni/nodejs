@@ -53,33 +53,33 @@ var db_user = "cmpe281" ;
 var db_pwd  = "cmpe281" ;
 var db_name = "test" ;
 */
-// var db
+var db
 
-// var db_host = (process.env.mongodb_host || "ds129393.mlab.com" ) ;
-// var db_port = (process.env.mongodb_port || "27017" ) ;
-// var db_user = (process.env.mongodb_user || "prajdb" ) ;
-// var db_pwd  = (process.env.mongodb_pwd  || "prajdb1" ) ;
-// var db_name = (process.env.mongodb_name || "heroku_k4fh0cvd" ) ;
+var db_host = (process.env.mongodb_host || "ds129393.mlab.com" ) ;
+var db_port = (process.env.mongodb_port || "29393" ) ;
+var db_user = (process.env.mongodb_user || "prajdb" ) ;
+var db_pwd  = (process.env.mongodb_pwd  || "prajdb1" ) ;
+var db_name = (process.env.mongodb_name || "heroku_k4fh0cvd" ) ;
    
 
-// var db = new DB(db_name,
-//                 new DB_Server( db_host, db_port,
-//                             { auto_reconnect: true,
-//                              poolSize: 20}),
-//                             { w: 1 } );
+var db = new DB(db_name,
+                new DB_Server( db_host, db_port,
+                            { auto_reconnect: true,
+                             poolSize: 20}),
+                            { w: 1 } );
 
-var db;
+// var db;
 
-// Connect to the database before starting the application server.
-mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://prajdb1:prajdb1@ds129393.mlab.com:29393/heroku_k4fh0cvd", function (err, client) {
-  if (err) {
-    console.log(err);
-    process.exit(1);
-  }
+// // Connect to the database before starting the application server.
+// mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://prajdb1:prajdb1@ds129393.mlab.com:29393/heroku_k4fh0cvd", function (err, client) {
+//   if (err) {
+//     console.log(err);
+//     process.exit(1);
+//   }
 
-  // Save database object from the callback for reuse.
-  db = client.db();
-  console.log("Database connection ready");
+//   // Save database object from the callback for reuse.
+//   db = client.db();
+//   console.log("Database connection ready");
 
 db_init = function (callback) {
     async.waterfall([
