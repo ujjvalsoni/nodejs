@@ -53,8 +53,9 @@ var db_user = "cmpe281" ;
 var db_pwd  = "cmpe281" ;
 var db_name = "test" ;
 */
+var db
 
-var db_host = (process.env.mongodb_host || "localhost" ) ;
+var db_host = (process.env.mongodb_host || "mongodb://heroku_k4fh0cvd:ss8glffo09b55voacjtt2q5gqp@ds129393.mlab.com:29393/heroku_k4fh0cvd" ) ;
 var db_port = (process.env.mongodb_port || "27017" ) ;
 var db_user = (process.env.mongodb_user || "prajdb" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "prajdb1" ) ;
