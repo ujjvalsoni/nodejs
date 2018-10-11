@@ -57,7 +57,7 @@ var db
 
 var db_host = (process.env.mongodb_host || "ds129393.mlab.com" ) ;
 var db_port = (process.env.mongodb_port || "29393" ) ;
-var db_user = (process.env.mongodb_user || "prajdb" ) ;
+var db_user = (process.env.mongodb_user || "prajdb1" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "prajdb1" ) ;
 var db_name = (process.env.mongodb_name || "heroku_k4fh0cvd" ) ;
    
