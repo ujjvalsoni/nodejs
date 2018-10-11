@@ -47,14 +47,14 @@ var DB = require('mongodb').Db,
     async = require('async') ;
 
 /*
-var db_host = "172.31.24.11" ;
+var db_host = "34.221.180.116" ;
 var db_port = "27017" ;
 var db_user = "cmpe281" ;
 var db_pwd  = "cmpe281" ;
 var db_name = "test" ;
 */
 
-var db_host = (process.env.mongodb_host || "172.31.24.11" ) ;
+var db_host = (process.env.mongodb_host || "34.221.180.116" ) ;
 var db_port = (process.env.mongodb_port || "27017" ) ;
 var db_user = (process.env.mongodb_user || "cmpe281" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "cmpe281" ) ;
