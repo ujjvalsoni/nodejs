@@ -54,11 +54,11 @@ var db_pwd  = "cmpe281" ;
 var db_name = "test" ;
 */
 
-var db_host = (process.env.mongodb_host || "localhost" ) ;
-var db_port = (process.env.mongodb_port || "27017" ) ;
-var db_user = (process.env.mongodb_user || "cmpe281" ) ;
-var db_pwd  = (process.env.mongodb_pwd  || "cmpe281" ) ;
-var db_name = (process.env.mongodb_name || "test" ) ;
+var db_host = (process.env.mongodb_host || "ds153677.mlab.com" ) ;
+var db_port = (process.env.mongodb_port || "53677" ) ;
+var db_user = (process.env.mongodb_user || "usoni" ) ;
+var db_pwd  = (process.env.mongodb_pwd  || "ujjvalsoni29" ) ;
+var db_name = (process.env.mongodb_name || "heroku_gk48ftpd" ) ;
    
 
 var db = new DB(db_name,
