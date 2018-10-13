@@ -55,11 +55,11 @@ var db_name = "test" ;
 */
 var db
 
-var db_host = (process.env.mongodb_host || "ds129393.mlab.com" ) ;
-var db_port = (process.env.mongodb_port || "29393" ) ;
-var db_user = (process.env.mongodb_user || "prajdb1" ) ;
-var db_pwd  = (process.env.mongodb_pwd  || "prajdb1" ) ;
-var db_name = (process.env.mongodb_name || "heroku_k4fh0cvd" ) ;
+var db_host = (process.env.mongodb_host || "ds153677.mlab.com" ) ;
+var db_port = (process.env.mongodb_port || "53677" ) ;
+var db_user = (process.env.mongodb_user || "usoni" ) ;
+var db_pwd  = (process.env.mongodb_pwd  || "Uj@12345" ) ;
+var db_name = (process.env.mongodb_name || "heroku_gk48ftpd" ) ;
    
 
 var db = new DB(db_name,
